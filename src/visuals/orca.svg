@@ -1,0 +1,21 @@
+<svg viewBox="0 0 480 360" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of the boat's camera detecting floating debris">
+  <path class="s-rule" d="M0 96H480M0 140H480" fill="none" stroke-dasharray="2 8" opacity=".6"/>
+  <text class="t" x="40" y="36">Detecting floating debris</text>
+  <g transform="translate(0 214)"><path class="v-wave f-trace" opacity=".08" d="M0 0 Q30 -7 60 0 T120 0 T180 0 T240 0 T300 0 T360 0 T420 0 T480 0 T540 0 T600 0 T660 0 T720 0 T780 0 T840 0 T900 0 T960 0 V150 H0 Z"/></g>
+  <g transform="translate(0 214)"><path class="v-wave s-trace" fill="none" stroke-width="1.6" d="M0 0 Q30 -7 60 0 T120 0 T180 0 T240 0 T300 0 T360 0 T420 0 T480 0 T540 0 T600 0 T660 0 T720 0 T780 0 T840 0 T900 0 T960 0"/></g>
+  <g transform="translate(-40 252)"><path class="v-wave b s-ink" fill="none" opacity=".26" d="M0 0 Q30 -7 60 0 T120 0 T180 0 T240 0 T300 0 T360 0 T420 0 T480 0 T540 0 T600 0 T660 0 T720 0 T780 0 T840 0 T900 0 T960 0"/></g>
+  <g transform="translate(-80 294)"><path class="v-wave c s-ink" fill="none" opacity=".14" d="M0 0 Q30 -7 60 0 T120 0 T180 0 T240 0 T300 0 T360 0 T420 0 T480 0 T540 0 T600 0 T660 0 T720 0 T780 0 T840 0 T900 0 T960 0"/></g>
+  <g transform="translate(262 214)"><g class="v-bob d2"><rect class="f-muted" x="-10" y="-5" width="20" height="8" rx="3" transform="rotate(-14)"/></g></g>
+  <g transform="translate(340 218)"><g class="v-bob d3"><circle class="f-muted" r="5.5"/></g></g>
+  <g transform="translate(414 211)"><g class="v-bob d1"><path class="f-muted" d="M-9 2C-8-6-1-8 4-5S10 3 6 5-9 8-9 2Z"/></g></g>
+  <g transform="translate(118 204)"><g class="v-bob">
+  <polygon class="v-sweep f-acc" opacity=".09" points="14,-32 380,-96 380,44"/>
+  <path class="f-ink" d="M-50 0H50L40 13H-40Z"/>
+  <rect class="f-ink" opacity=".78" x="-22" y="-17" width="34" height="17" rx="3"/>
+  <path class="s-ink" stroke-width="1.5" d="M8-17V-32"/>
+  <circle class="f-acc" cx="12" cy="-32" r="3.5"/>
+  </g></g>
+  <g class="v-det" transform="translate(262 211)"><rect class="s-acc" fill="none" stroke-width="1.5" x="-19" y="-16" width="38" height="28" rx="2"/><rect class="f-acc" x="-19" y="-30" width="44" height="14" rx="2"/><text class="t-on" x="-14" y="-20">debris</text></g>
+  <g class="v-det d2" transform="translate(340 216)"><rect class="s-acc" fill="none" stroke-width="1.5" x="-15" y="-15" width="30" height="26" rx="2"/><rect class="f-acc" x="-15" y="-29" width="44" height="14" rx="2"/><text class="t-on" x="-10" y="-19">debris</text></g>
+  <g class="v-det d3" transform="translate(414 209)"><rect class="s-acc" fill="none" stroke-width="1.5" x="-18" y="-16" width="36" height="28" rx="2"/><rect class="f-acc" x="-18" y="-30" width="44" height="14" rx="2"/><text class="t-on" x="-13" y="-20">debris</text></g>
+  </svg>

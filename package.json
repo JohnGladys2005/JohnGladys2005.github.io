@@ -1,0 +1,13 @@
+{
+  "name": "srautomates-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio website of John Gladys S, founder of SR.Automates, Chennai",
+  "scripts": {
+    "build": "node build.js",
+    "start": "node build.js --serve 8080"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

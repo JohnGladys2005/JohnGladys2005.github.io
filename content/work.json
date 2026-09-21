@@ -1,0 +1,134 @@
+{
+  "heading": "Things I've actually built",
+  "intro": "Autonomous hardware, full-stack applications and data tooling, built solo or leading small teams.",
+  "projects": [
+    {
+      "title": "ORCA Surfer",
+      "subtitle": "Autonomous marine litter collector",
+      "period": "2024–2025",
+      "context": [
+        "AI, computer vision, IoT"
+      ],
+      "description": "An IoT-enabled boat that finds and collects floating waste on its own. I built the YOLOv5 detection pipeline and the sensor-navigation stack that maps debris in real time and steers the craft toward it. Presented at OSICON 2025, CSIR-NIO, Goa.",
+      "metrics": [
+        {
+          "value": "70%",
+          "label": "Detection accuracy"
+        },
+        {
+          "value": "40%",
+          "label": "Less manual cleanup"
+        },
+        {
+          "value": "National",
+          "label": "Conference showcase"
+        }
+      ],
+      "tags": [
+        "YOLOv5",
+        "OpenCV",
+        "Python",
+        "IoT",
+        "Autonomous navigation"
+      ],
+      "visual": "orca",
+      "image": "",
+      "link": ""
+    },
+    {
+      "title": "Autonomous Surface Vehicle",
+      "subtitle": "Navigation and electronics for an ocean-going vehicle",
+      "period": "2026",
+      "context": [
+        "NIOT, Chennai"
+      ],
+      "description": "GNSS-IMU sensor fusion for positioning and heading, a LoRa telemetry link to the shore station, and artificial-potential-field obstacle avoidance simulated in ROS and Gazebo.",
+      "metrics": [],
+      "tags": [
+        "ROS",
+        "Gazebo",
+        "GNSS / IMU",
+        "LoRa",
+        "Raspberry Pi"
+      ],
+      "visual": "asv",
+      "image": "",
+      "link": ""
+    },
+    {
+      "title": "Aqua Nexus",
+      "subtitle": "Flood monitoring platform",
+      "period": "2025",
+      "context": [
+        "Smart India Hackathon"
+      ],
+      "description": "A web and mobile application for real-time river water-level monitoring, backed by PostgreSQL with PostGIS. Includes GPS-tagged field reporting, image watermarking for verifiable evidence, and a live dashboard for local authorities.",
+      "metrics": [],
+      "tags": [
+        "PostgreSQL",
+        "PostGIS",
+        "Web and mobile",
+        "Dashboard"
+      ],
+      "visual": "aqua",
+      "image": "",
+      "link": ""
+    },
+    {
+      "title": "Argo Float Data Pipeline",
+      "subtitle": "Oceanographic analysis, automated",
+      "period": "2025",
+      "context": [
+        "Data engineering"
+      ],
+      "description": "Python tooling that ingests Argo float oceanographic datasets and automates extraction, cleaning and visualization of temperature and salinity profiles, replacing analysis that was previously done by hand.",
+      "metrics": [],
+      "tags": [
+        "Python",
+        "Data processing",
+        "Visualization"
+      ],
+      "visual": "argo",
+      "image": "",
+      "link": ""
+    },
+    {
+      "title": "River Water Quality Monitor",
+      "subtitle": "Live sensing with automatic alerts",
+      "period": "2024",
+      "context": [
+        "IoT, full stack"
+      ],
+      "description": "An IoT monitoring system reading pH, turbidity and conductivity, streaming into a Flask dashboard that fires automatic alerts the moment any reading crosses a safe threshold.",
+      "metrics": [],
+      "tags": [
+        "Flask",
+        "Sensors",
+        "Real-time alerts"
+      ],
+      "visual": "water",
+      "image": "",
+      "link": ""
+    },
+    {
+      "title": "Computer Vision Prediction System",
+      "subtitle": "Research team lead",
+      "period": "2025",
+      "context": [
+        "MIT Chennai",
+        "Team lead"
+      ],
+      "description": "Led a research team building a body-constitution prediction system from images using OpenCV, benchmarking SVM, Random Forest and CNN approaches, and contributing to a paper draft on AI-based environmental sensing.",
+      "metrics": [],
+      "tags": [
+        "OpenCV",
+        "SVM",
+        "Random Forest",
+        "CNN"
+      ],
+      "visual": "cv",
+      "image": "",
+      "link": ""
+    }
+  ]
+}

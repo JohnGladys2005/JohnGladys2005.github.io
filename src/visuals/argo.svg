@@ -1,0 +1,17 @@
+<svg viewBox="0 0 480 360" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of temperature and salinity profiles drawn from a diving float">
+  <text class="t" x="40" y="36">Argo float profiles</text>
+  <path class="s-rule" fill="none" d="M60 64V320M60 64H304"/>
+  <g class="s-rule"><path d="M56 128H60M56 192H60M56 256H60M56 320H60"/></g>
+  <text class="t" transform="translate(42 196) rotate(-90)" text-anchor="middle">Depth</text>
+  <path class="s-acc v-draw" pathLength="1" fill="none" stroke-width="2.2" stroke-linecap="round" d="M276 70C272 96 252 118 180 146S104 230 98 318"/>
+  <path class="s-trace v-draw dl" pathLength="1" fill="none" stroke-width="2.2" stroke-linecap="round" d="M118 70C124 104 150 128 204 156S236 244 240 318"/>
+  <path class="s-acc" stroke-width="2.2" d="M72 344H92"/><text class="t" x="98" y="348">Temperature</text>
+  <path class="s-trace" stroke-width="2.2" d="M196 344H216"/><text class="t" x="222" y="348">Salinity</text>
+  <path class="s-ink" fill="none" opacity=".5" d="M340 64Q352 58 364 64T388 64 412 64 436 64 460 64"/>
+  <path class="s-rule" stroke-dasharray="3 6" d="M400 70V320"/>
+  <g transform="translate(400 70)"><g class="v-dive">
+  <path class="s-ink" stroke-width="1.5" d="M0-2V-18"/>
+  <rect class="f-ink" x="-8" y="-2" width="16" height="46" rx="8"/>
+  <rect class="f-acc" x="-8" y="14" width="16" height="6"/>
+  </g></g>
+  </svg>

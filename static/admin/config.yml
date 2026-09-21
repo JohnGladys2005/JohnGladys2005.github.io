@@ -1,0 +1,296 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+#
+# EDITING BACKEND for the SR.Automates portfolio (Sveltia CMS).
+# Open  https://<your-site>/admin/  and choose "Sign In Using Access Token".
+# Every Save commits to GitHub, and the site rebuilds itself in about a minute.
+# Docs: https://sveltiacms.app/en/docs/intro
+
+backend:
+  name: github
+  repo: JohnGladys2005/johngladys2005.github.io   # <- CHANGE to your-github-username/your-repository-name
+  branch: main
+
+site_url: https://johngladys2005.github.io        # <- CHANGE when you connect your own domain
+display_url: https://johngladys2005.github.io
+
+media_folder: static/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: website
+    label: Website
+    description: Everything on the portfolio page. Press Save and the live site updates in about a minute.
+    files:
+
+      # ------------------------------------------------------------------ SEO
+      - name: seo
+        label: "Google and social sharing"
+        file: content/seo.json
+        fields:
+          - label: Website address
+            name: site_url
+            widget: string
+            hint: "Full address with https://, no slash at the end. Change it when you connect your own domain, for example https://srautomates.com"
+          - label: Title shown on Google and in the browser tab
+            name: title
+            widget: string
+            hint: "Keep your name and company name in it. Around 50 to 60 characters."
+          - label: Description shown under the title on Google
+            name: description
+            widget: text
+            hint: "One or two sentences, around 150 characters."
+          - label: Image shown when the link is shared (1200 x 630)
+            name: share_image
+            widget: image
+          - label: Google Search Console verification code
+            name: google_verification
+            widget: string
+            required: false
+            hint: "From Search Console > Add property > HTML tag. Paste the code or the whole meta tag."
+          - label: Bing Webmaster Tools verification code
+            name: bing_verification
+            widget: string
+            required: false
+          - label: Topics you want to be known for
+            name: topics
+            widget: list
+            field: { label: Topic, name: topic, widget: string }
+          - label: Extra company profile links
+            name: extra_company_profiles
+            widget: list
+            required: false
+            hint: "For example your LinkedIn company page or Google Business Profile link."
+            field: { label: Link, name: link, widget: string }
+
+      # ------------------------------------------------------------------ PROFILE
+      - name: profile
+        label: "Name, company and photos"
+        file: content/profile.json
+        fields:
+          - { label: Full name, name: name, widget: string }
+          - label: Other names people search for
+            name: other_names
+            widget: list
+            field: { label: Name, name: name, widget: string }
+          - { label: "Big name, first line", name: hero_line_1, widget: string }
+          - { label: "Big name, second line", name: hero_line_2, widget: string }
+          - { label: Role, name: role, widget: string }
+          - { label: Company name, name: company, widget: string, hint: "A dot in the name is shown in the accent colour." }
+          - label: Other ways people write the company name
+            name: company_other_names
+            widget: list
+            field: { label: Name, name: name, widget: string }
+          - { label: City, name: city, widget: string }
+          - { label: State or region, name: region, widget: string }
+          - { label: Country code, name: country_code, widget: string, hint: "Two letters, for example IN" }
+          - { label: Country, name: country_name, widget: string }
+          - { label: College or university, name: education, widget: string }
+          - { label: "Hero photo (cut-out, transparent background)", name: hero_photo, widget: image }
+          - { label: About section portrait, name: portrait, widget: image }
+          - { label: Available for new work, name: available, widget: boolean, hint: "Off turns the green dot amber." }
+          - { label: Availability text in the menu bar, name: status_label, widget: string }
+
+      # ------------------------------------------------------------------ HERO
+      - name: hero
+        label: "Top of page"
+        file: content/hero.json
+        fields:
+          - { label: Line before the rotating phrases, name: lead, widget: string }
+          - label: Rotating phrases
+            name: phrases
+            widget: list
+            field: { label: Phrase, name: phrase, widget: string }
+          - { label: Main button, name: button_primary, widget: string }
+          - { label: Second button, name: button_secondary, widget: string }
+          - { label: Based in, name: based_in, widget: string }
+          - { label: Hint about the water ping, name: ping_hint, widget: string }
+          - label: Scrolling ticker words
+            name: ticker
+            widget: list
+            field: { label: Word or phrase, name: item, widget: string }
+
+      # ------------------------------------------------------------------ ABOUT
+      - name: about
+        label: "About"
+        file: content/about.json
+        fields:
+          - { label: Big opening statement, name: statement, widget: text }
+          - { label: Greeting heading, name: hello, widget: string }
+          - label: Bio paragraphs
+            name: paragraphs
+            widget: list
+            hint: "Wrap words in **double stars** to make them bold."
+            field: { label: Paragraph, name: paragraph, widget: text }
+          - { label: Caption under the photo, name: photo_caption, widget: string }
+          - label: Quick facts
+            name: facts
+            widget: list
+            summary: "{{fields.label}}: {{fields.value}}"
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: Value, name: value, widget: string }
+          - label: Numbers
+            name: stats
+            widget: list
+            summary: "{{fields.number}}{{fields.suffix}} {{fields.label}}"
+            fields:
+              - { label: Number, name: number, widget: number, value_type: int }
+              - { label: "After the number (like +)", name: suffix, widget: string, required: false }
+              - { label: Label, name: label, widget: string }
+
+      # ------------------------------------------------------------------ SERVICES
+      - name: services
+        label: "Services and process"
+        file: content/services.json
+        fields:
+          - { label: Heading, name: heading, widget: string }
+          - { label: Intro, name: intro, widget: text }
+          - label: Services
+            name: items
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Description, name: description, widget: text }
+              - label: Typical stack
+                name: stack
+                widget: list
+                required: false
+                field: { label: Item, name: item, widget: string }
+          - { label: Process heading, name: process_heading, widget: string }
+          - label: Process steps
+            name: steps
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Text, name: text, widget: text }
+
+      # ------------------------------------------------------------------ WORK
+      - name: work
+        label: "Projects"
+        file: content/work.json
+        fields:
+          - { label: Heading, name: heading, widget: string }
+          - { label: Intro, name: intro, widget: text }
+          - label: Projects
+            name: projects
+            widget: list
+            summary: "{{fields.title}} ({{fields.period}})"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Subtitle, name: subtitle, widget: string, required: false }
+              - { label: "Year or period", name: period, widget: string, required: false }
+              - label: Context labels
+                name: context
+                widget: list
+                required: false
+                hint: "Shown next to the year, for example the client or the field."
+                field: { label: Label, name: label, widget: string }
+              - { label: Description, name: description, widget: text }
+              - label: Results
+                name: metrics
+                widget: list
+                required: false
+                summary: "{{fields.value}} {{fields.label}}"
+                fields:
+                  - { label: "Value (like 70%)", name: value, widget: string }
+                  - { label: Label, name: label, widget: string }
+              - label: Tags
+                name: tags
+                widget: list
+                required: false
+                field: { label: Tag, name: tag, widget: string }
+              - label: Illustration
+                name: visual
+                widget: select
+                default: signal
+                options:
+                  - { label: "Boat detecting debris", value: orca }
+                  - { label: "Vessel following a route", value: asv }
+                  - { label: "River level and alert", value: aqua }
+                  - { label: "Ocean float profiles", value: argo }
+                  - { label: "Live sensor dashboard", value: water }
+                  - { label: "Image scanning and models", value: cv }
+                  - { label: "Generic signal waves", value: signal }
+                  - { label: "Use the image uploaded below", value: image }
+              - { label: "Project image (used when Illustration is set to the uploaded image)", name: image, widget: image, required: false }
+              - { label: "Project link (optional, shows a View project button)", name: link, widget: string, required: false }
+
+      # ------------------------------------------------------------------ EXPERIENCE
+      - name: experience
+        label: "Experience, skills and awards"
+        file: content/experience.json
+        fields:
+          - { label: Heading, name: heading, widget: string }
+          - { label: Intro, name: intro, widget: text }
+          - label: Timeline
+            name: timeline
+            widget: list
+            summary: "{{fields.period}}: {{fields.title}}"
+            fields:
+              - { label: Period, name: period, widget: string }
+              - { label: Place, name: place, widget: string, required: false }
+              - { label: Title, name: title, widget: string }
+              - { label: Organisation, name: org, widget: string, required: false }
+              - { label: Summary paragraph, name: summary, widget: text, required: false }
+              - label: Bullet points
+                name: points
+                widget: list
+                required: false
+                field: { label: Point, name: point, widget: text }
+          - { label: Skills heading, name: stack_heading, widget: string }
+          - label: Skill groups
+            name: stack
+            widget: list
+            summary: "{{fields.group}}"
+            fields:
+              - { label: Group name, name: group, widget: string }
+              - label: Items
+                name: items
+                widget: list
+                field: { label: Item, name: item, widget: string }
+          - { label: Awards heading, name: awards_heading, widget: string }
+          - label: Awards
+            name: awards
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Detail, name: detail, widget: string }
+          - { label: Certifications heading, name: certifications_heading, widget: string }
+          - label: Certifications
+            name: certifications
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Issued by, name: issuer, widget: string }
+
+      # ------------------------------------------------------------------ CONTACT
+      - name: contact
+        label: "Contact and footer"
+        file: content/contact.json
+        fields:
+          - { label: Heading, name: heading, widget: string }
+          - { label: Intro text, name: lead, widget: text }
+          - { label: Email, name: email, widget: string }
+          - { label: Phone (as shown), name: phone, widget: string, required: false }
+          - { label: "WhatsApp number (digits with country code, like 919360306504)", name: whatsapp, widget: string, required: false }
+          - { label: LinkedIn link, name: linkedin, widget: string, required: false }
+          - { label: Instagram link, name: instagram, widget: string, required: false }
+          - { label: GitHub link, name: github, widget: string, required: false }
+          - { label: Location line, name: location_line, widget: string, required: false }
+          - label: Form, project types
+            name: project_types
+            widget: list
+            field: { label: Option, name: option, widget: string }
+          - label: Form, budgets
+            name: budgets
+            widget: list
+            field: { label: Option, name: option, widget: string }
+          - label: Form, timelines
+            name: timelines
+            widget: list
+            field: { label: Option, name: option, widget: string }
+          - { label: Footer text, name: footer_text, widget: string }

@@ -1,0 +1,236 @@
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><i id="progress"></i></div>
+<canvas class="gl" id="gl" aria-hidden="true"></canvas>
+<div class="cursor" id="cursor" aria-hidden="true"><i></i><b></b></div>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-top"><b>{{{render.brand}}}</b><span>{{profile.name}}</span></div>
+  <svg class="loader-wave" viewBox="0 0 1200 140" preserveAspectRatio="none"><path id="loaderPath" d="M0 70H1200"/></svg>
+  <div class="loader-num" id="loaderNum">000</div>
+</div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="{{profile.company}}, back to top">{{{render.brand}}}</a>
+  <nav class="links" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="status" href="#contact"><span class="beacon{{render.busy}}"></span>{{profile.status_label}}</a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu"><span class="mb-t">Menu</span><i></i></button>
+</header>
+
+<nav class="gauge" id="gauge" aria-label="Page sections">
+  <div class="gauge-rail" aria-hidden="true"><i id="gaugeFill"></i></div>
+  <a href="#top"><span>Intro</span></a>
+  <a href="#about"><span>About</span></a>
+  <a href="#services"><span>Services</span></a>
+  <a href="#work"><span>Work</span></a>
+  <a href="#experience"><span>Experience</span></a>
+  <a href="#contact"><span>Contact</span></a>
+</nav>
+
+<div class="menu" id="menu" inert>
+  <nav aria-label="Mobile">
+    <a href="#about" style="--i:0">About</a>
+    <a href="#services" style="--i:1">Services</a>
+    <a href="#work" style="--i:2">Work</a>
+    <a href="#experience" style="--i:3">Experience</a>
+    <a href="#contact" style="--i:4">Contact</a>
+  </nav>
+  <div class="menu-foot"><a href="mailto:{{contact.email}}">{{contact.email}}</a><span>{{profile.city}}, {{profile.region}}</span></div>
+</div>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top" aria-label="Introduction" data-cursor="Ping">
+  <canvas class="field" id="field" aria-hidden="true"></canvas>
+
+  <div class="name-wrap">
+    <div class="name-mouse">
+      <h1 class="name">
+        <span class="sr-only">{{profile.name}}, {{profile.role}} and founder of {{profile.company}}</span>
+        <span aria-hidden="true"><span class="nl">{{profile.hero_line_1}}</span> <span class="nl">{{profile.hero_line_2}}</span></span>
+      </h1>
+    </div>
+  </div>
+
+  <div class="cut"><div class="cut-mouse"><span class="cut-breathe"><img class="cut-img" src="{{render.hero_photo}}" alt="" width="563" height="1100" decoding="async" fetchpriority="high"></span></div></div>
+
+  <div class="name-wrap name-wrap--front" aria-hidden="true">
+    <div class="name-mouse"><div class="name name-outline"><span class="nl">{{profile.hero_line_1}}</span> <span class="nl">{{profile.hero_line_2}}</span></div></div>
+  </div>
+
+  <div class="hero-foot">
+    <div class="hero-lead">
+      <p class="role"><span class="sr-only">{{render.role_sentence}}</span><span aria-hidden="true">{{hero.lead}}<br><span class="role-var" id="roleVar">{{render.first_phrase}}</span></span></p>
+      <div class="cta">
+        <a class="btn btn-solid magnetic" href="#contact"><span class="btn-l"><span class="btn-t" data-label="{{hero.button_primary}}">{{hero.button_primary}}</span></span></a>
+        <a class="btn btn-ghost magnetic" href="#work"><span class="btn-l"><span class="btn-t" data-label="{{hero.button_secondary}}">{{hero.button_secondary}}</span></span></a>
+      </div>
+    </div>
+    <div class="hero-meta">
+      <p><span class="k">Based in</span>{{hero.based_in}}</p>
+      <p><span class="k">Local time</span><span id="clock">IST</span></p>
+      <p class="ping-hint"><i></i>{{hero.ping_hint}}</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TICKER ================= -->
+<div class="marquee" aria-hidden="true">
+  <div class="mq-track" id="mqTrack">
+    {{{render.ticker}}}
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section class="sec" id="about" aria-labelledby="statement">
+  <div class="wrap">
+    <h2 class="statement" id="statement">{{about.statement}}</h2>
+
+    <div class="about-grid">
+      <figure class="portrait-fig">
+        <div class="portrait"><img src="{{render.portrait}}" alt="Portrait of {{profile.name}}" width="600" height="800" loading="lazy" decoding="async"></div>
+        <figcaption><span class="beacon{{render.busy}}"></span>{{about.photo_caption}}</figcaption>
+      </figure>
+      <div class="bio">
+        <h3 class="bio-hi" data-split>{{about.hello}}</h3>
+        {{{render.paragraphs}}}
+        <dl class="facts" data-fade>
+          {{{render.facts}}}
+        </dl>
+      </div>
+    </div>
+
+    <ul class="stats">
+      {{{render.stats}}}
+    </ul>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="sec" id="services" aria-labelledby="services-h" style="padding-top:0">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2 id="services-h" data-split>{{services.heading}}</h2>
+      <p data-fade>{{services.intro}}</p>
+    </header>
+
+    <div class="svc-list" id="svcList">
+      {{{render.services}}}
+    </div>
+
+    <div class="process">
+      <h3 class="sub-h" data-split>{{services.process_heading}}</h3>
+      <ol class="steps" id="steps">
+        <li class="rail" aria-hidden="true"><i id="rail"></i></li>
+        {{{render.steps}}}
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WORK ================= -->
+<section class="work" id="work" aria-labelledby="work-h">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2 id="work-h" data-split>{{work.heading}}</h2>
+      <p data-fade>{{work.intro}}</p>
+    </header>
+  </div>
+
+  <div class="hpin" id="hpin">
+    <div class="htrack" id="htrack">
+      {{{render.projects}}}
+    </div>
+    <div class="hbar" aria-hidden="true"><span><b id="hcount">01</b> / {{render.project_total}}</span><div class="hprog"><i id="hprog"></i></div><span>Scroll to explore</span></div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="sec" id="experience" aria-labelledby="exp-h">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2 id="exp-h" data-split>{{experience.heading}}</h2>
+      <p data-fade>{{experience.intro}}</p>
+    </header>
+
+    <ol class="tl">
+      {{{render.timeline}}}
+    </ol>
+
+    <div class="block">
+      <h3 class="sub-h" data-split>{{experience.stack_heading}}</h3>
+      <div class="stack">
+        {{{render.stack}}}
+      </div>
+    </div>
+
+    <div class="block">
+      <h3 class="sub-h" data-split>{{experience.awards_heading}}</h3>
+      <ul class="awards">
+        {{{render.awards}}}
+      </ul>
+    </div>
+
+    <div class="block">
+      <h3 class="sub-h" data-split>{{experience.certifications_heading}}</h3>
+      <ul class="certs" data-fade>
+        {{{render.certifications}}}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="sec" id="contact" aria-labelledby="contact-h" style="padding-top:clamp(40px,6vw,80px)">
+  <div class="wrap">
+    <h2 class="contact-title" id="contact-h">{{contact.heading}}</h2>
+    <div class="contact-grid">
+      <div data-fade>
+        <p class="contact-lead">{{contact.lead}}</p>
+        <ul class="clinks">
+          {{{render.contact_links}}}
+        </ul>
+      </div>
+
+      <form class="pf" id="pf" data-fade novalidate>
+        <div class="f"><label for="fn">Your name</label><input type="text" id="fn" name="name" autocomplete="name" required><span class="bar"></span></div>
+        <div class="f"><label for="fe">Email</label><input type="email" id="fe" name="email" autocomplete="email" required><span class="bar"></span></div>
+        <div class="f"><label for="fc">Company (optional)</label><input type="text" id="fc" name="company" autocomplete="organization"><span class="bar"></span></div>
+        <div class="f"><label for="ft">Project type</label><select id="ft" name="type">{{{render.opt_types}}}</select><span class="bar"></span></div>
+        <div class="f"><label for="fb">Budget</label><select id="fb" name="budget">{{{render.opt_budgets}}}</select><span class="bar"></span></div>
+        <div class="f"><label for="fd">Timeline</label><select id="fd" name="timeline">{{{render.opt_timelines}}}</select><span class="bar"></span></div>
+        <div class="f full"><label for="fm">What are you trying to build?</label><textarea id="fm" name="message" rows="5" required></textarea><span class="bar"></span></div>
+        <div class="pf-foot">
+          <button type="submit" class="btn btn-solid magnetic"><span class="btn-l"><span class="btn-t" data-label="Send project details">Send project details</span></span></button>
+          <p class="fstat" id="fstat" aria-live="polite"></p>
+        </div>
+        <p class="fnote">This opens your email app with everything filled in, addressed to {{contact.email}}. Nothing is sent automatically.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot" id="foot">
+  <div class="mark" id="mark" aria-label="{{profile.company}}"><span aria-hidden="true">{{profile.company}}</span></div>
+  <div class="wrap">
+    <div class="foot-meta">
+      <p>© {{render.year}} {{profile.company}}. {{contact.footer_text}}</p>
+      <div class="foot-links">
+        {{{render.footer_links}}}
+        <a href="#top">Back to top</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="application/json" id="siteData">{{{render.client_json}}}</script>

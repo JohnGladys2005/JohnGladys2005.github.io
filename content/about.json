@@ -1,0 +1,50 @@
+{
+  "statement": "I turn ideas into working software, from web apps and automation to connected hardware, and I handle the whole build from architecture to launch.",
+  "hello": "Hello, I'm John Gladys.",
+  "paragraphs": [
+    "I'm a Full Stack Developer based in **Chennai, Tamil Nadu**, and the founder of **SR.Automates**, a software studio building web and app products, automation tools and custom software for clients who need something built properly.",
+    "My background is in **Electronics & Communication Engineering**, which means I'm as comfortable with a sensor board as I am with a codebase. I've engineered navigation and sensor systems for an autonomous marine vehicle at the **National Institute of Ocean Technology**, and led a computer-vision research team at **Madras Institute of Technology**.",
+    "That range is the point: most problems worth solving don't stay neatly inside one discipline. Whether it's a dashboard, an API, a script that removes a week of manual work, or a device in the field, I build it so it keeps working after I hand it over."
+  ],
+  "photo_caption": "Available for new projects",
+  "facts": [
+    {
+      "label": "Role",
+      "value": "Full Stack Developer at SR.Automates"
+    },
+    {
+      "label": "Based in",
+      "value": "Chennai, Tamil Nadu, India"
+    },
+    {
+      "label": "Core stack",
+      "value": "Java, Python, web and app development"
+    },
+    {
+      "label": "Languages",
+      "value": "Tamil, English, Hindi"
+    }
+  ],
+  "stats": [
+    {
+      "number": 6,
+      "suffix": "+",
+      "label": "Projects delivered"
+    },
+    {
+      "number": 5,
+      "suffix": "+",
+      "label": "Awards and wins"
+    },
+    {
+      "number": 8,
+      "suffix": "",
+      "label": "Certifications"
+    },
+    {
+      "number": 2,
+      "suffix": "",
+      "label": "Research roles"
+    }
+  ]
+}

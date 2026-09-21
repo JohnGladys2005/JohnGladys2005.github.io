@@ -1,0 +1,33 @@
+{
+  "heading": "Let's build something that works.",
+  "lead": "Send me what you're trying to build. You'll get an honest answer on whether I'm the right fit, what it takes, and what it costs. Free first look, no pressure.",
+  "email": "sr.automates@gmail.com",
+  "phone": "+91 93603 06504",
+  "whatsapp": "919360306504",
+  "linkedin": "https://www.linkedin.com/in/srautomates",
+  "instagram": "https://instagram.com/sr.automates",
+  "github": "https://github.com/JohnGladys2005",
+  "location_line": "Chennai, Tamil Nadu. Working with clients everywhere.",
+  "project_types": [
+    "Website or web app",
+    "Mobile / app development",
+    "Automation or custom tool",
+    "API or integration",
+    "IoT or embedded hardware",
+    "Something else"
+  ],
+  "budgets": [
+    "Under ₹25,000",
+    "₹25,000 – ₹75,000",
+    "₹75,000 – ₹2,00,000",
+    "₹2,00,000+",
+    "Not sure yet"
+  ],
+  "timelines": [
+    "As soon as possible",
+    "Within 1 month",
+    "1–3 months",
+    "Flexible"
+  ],
+  "footer_text": "John Gladys S, Full Stack Developer, Chennai."
+}

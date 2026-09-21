@@ -1,0 +1,25 @@
+{
+  "name": "John Gladys S",
+  "other_names": [
+    "John Gladys",
+    "John Gladys S Chennai"
+  ],
+  "hero_line_1": "John",
+  "hero_line_2": "Gladys S",
+  "role": "Full Stack Developer",
+  "company": "SR.Automates",
+  "company_other_names": [
+    "SR Automates",
+    "SRAutomates",
+    "SR.Automates Chennai"
+  ],
+  "city": "Chennai",
+  "region": "Tamil Nadu",
+  "country_code": "IN",
+  "country_name": "India",
+  "education": "Anna University Regional Campus, Tirunelveli",
+  "hero_photo": "/images/hero-cutout.webp",
+  "portrait": "/images/portrait.webp",
+  "available": true,
+  "status_label": "Available for projects"
+}

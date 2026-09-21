@@ -1,0 +1,166 @@
+{
+  "heading": "Career and credentials",
+  "intro": "Where I've built, what I work with, and the recognition the work has earned.",
+  "timeline": [
+    {
+      "period": "2026–present",
+      "place": "Chennai",
+      "title": "Full Stack Developer & Founder",
+      "org": "SR.Automates",
+      "summary": "Running my own software studio, delivering web and app products, automation tools and custom software for clients end to end: scoping, building, deploying and supporting.",
+      "points": []
+    },
+    {
+      "period": "Jan–Mar 2026",
+      "place": "Chennai",
+      "title": "Project Engineer, Electronic System Development",
+      "org": "National Institute of Ocean Technology (NIOT)",
+      "summary": "",
+      "points": [
+        "Implemented GNSS-IMU sensor integration for accurate positioning and orientation of autonomous systems.",
+        "Developed LoRa-based long-range wireless data transmission between an ocean surface vehicle and its shore station.",
+        "Built artificial-potential-field obstacle avoidance simulation using ROS in Gazebo.",
+        "Programmed Raspberry Pi and Arduino Mega for real-time sensor acquisition and processing."
+      ]
+    },
+    {
+      "period": "Jun–Jul 2025",
+      "place": "Chennai",
+      "title": "Research Engineer, Team Lead",
+      "org": "Madras Institute of Technology (MIT)",
+      "summary": "",
+      "points": [
+        "Led a team developing a computer-vision prediction system using OpenCV and machine-learning models.",
+        "Evaluated SVM, Random Forest and CNN architectures; contributed to a research paper draft on AI-based environmental sensing."
+      ]
+    },
+    {
+      "period": "2022–2026",
+      "place": "Tirunelveli",
+      "title": "B.E. Electronics & Communication Engineering",
+      "org": "Anna University Regional Campus",
+      "summary": "Graduated with a CGPA of 7.5/10 and no arrears, alongside national hackathons, conference presentations and a continuous stream of build projects.",
+      "points": []
+    }
+  ],
+  "stack_heading": "What I work with",
+  "stack": [
+    {
+      "group": "Languages",
+      "items": [
+        "Java",
+        "Python",
+        "C",
+        "SQL",
+        "HTML / CSS"
+      ]
+    },
+    {
+      "group": "Web, data and cloud",
+      "items": [
+        "Flask",
+        "PostgreSQL",
+        "PostGIS",
+        "Firebase",
+        "REST APIs"
+      ]
+    },
+    {
+      "group": "AI and computer vision",
+      "items": [
+        "OpenCV",
+        "YOLOv5",
+        "CNN",
+        "SVM",
+        "Random Forest"
+      ]
+    },
+    {
+      "group": "Embedded and robotics",
+      "items": [
+        "ESP32",
+        "ESP8266",
+        "Arduino",
+        "Raspberry Pi",
+        "ROS",
+        "Gazebo",
+        "GNSS",
+        "IMU",
+        "LoRa",
+        "UART / I2C / SPI"
+      ]
+    },
+    {
+      "group": "Tools",
+      "items": [
+        "Git and GitHub",
+        "VS Code",
+        "Jupyter",
+        "Google Colab",
+        "Wokwi"
+      ]
+    }
+  ],
+  "awards_heading": "Awards and wins",
+  "awards": [
+    {
+      "title": "Winner, Theerkathon Innovation Challenge",
+      "detail": "StartupTN, Madurai. Awarded by the Tamil Nadu IT Minister."
+    },
+    {
+      "title": "Runner-up, Brilliant Bharath Hackathon 2025",
+      "detail": "Awarded by an IGCAR scientist."
+    },
+    {
+      "title": "Certificate of Excellence, OSICON-25",
+      "detail": "CSIR-NIO, Goa. National Ocean Science Conference."
+    },
+    {
+      "title": "Best Project Award, MIT Chennai",
+      "detail": "Computer-vision research project."
+    },
+    {
+      "title": "Recognized by Thoothukudi Police",
+      "detail": "Smart-parking IoT prototype, Cyber Hackathon."
+    },
+    {
+      "title": "Multiple paper and project expo wins",
+      "detail": "Across institutions in Tamil Nadu."
+    }
+  ],
+  "certifications_heading": "Certifications",
+  "certifications": [
+    {
+      "name": "AI & Full Stack Masterclass",
+      "issuer": "Novitech R&D Pvt. Ltd."
+    },
+    {
+      "name": "Artificial Intelligence & Machine Learning",
+      "issuer": "NPTEL"
+    },
+    {
+      "name": "Leveraging AI in Data Analytics",
+      "issuer": "AcceleratorX"
+    },
+    {
+      "name": "TCS iON Career Edge",
+      "issuer": "Young Professional"
+    },
+    {
+      "name": "Network Essentials",
+      "issuer": "Cisco Networking Academy"
+    },
+    {
+      "name": "Python Essential Training",
+      "issuer": "LinkedIn Learning"
+    },
+    {
+      "name": "ADAS Level 1 & 2",
+      "issuer": "Naan Mudhalvan"
+    },
+    {
+      "name": "Java Full Stack Developer Course",
+      "issuer": "Full stack development"
+    }
+  ]
+}

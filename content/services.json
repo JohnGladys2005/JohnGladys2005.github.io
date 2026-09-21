@@ -1,0 +1,68 @@
+{
+  "heading": "What SR.Automates builds for you",
+  "intro": "Four kinds of work, usually combined. Tell me the problem and I'll tell you what it actually needs. Free first look, no pressure.",
+  "items": [
+    {
+      "name": "Web & app development",
+      "description": "Business websites, dashboards, portals and mobile-ready apps, designed, built and deployed as a finished product you can actually run.",
+      "stack": [
+        "Java",
+        "Python",
+        "HTML / CSS",
+        "Flask",
+        "PostgreSQL",
+        "Firebase"
+      ]
+    },
+    {
+      "name": "Automation & custom tools",
+      "description": "Scripts and internal tools that take over the reporting, data entry and monitoring your team shouldn't be doing by hand. Hours back, every week.",
+      "stack": [
+        "Python",
+        "Data pipelines",
+        "Scheduled jobs",
+        "Reporting"
+      ]
+    },
+    {
+      "name": "APIs & integrations",
+      "description": "Connecting the systems you already pay for (databases, spreadsheets, sensors, third-party services) so data moves between them without a human in the middle.",
+      "stack": [
+        "REST APIs",
+        "PostgreSQL / PostGIS",
+        "Firebase",
+        "Serial and IoT bridges"
+      ]
+    },
+    {
+      "name": "IoT & embedded systems",
+      "description": "Sensor-driven monitoring and control hardware, from a working prototype to a device that survives the field, with the dashboard to read it.",
+      "stack": [
+        "ESP32",
+        "Raspberry Pi",
+        "Arduino",
+        "LoRa",
+        "GNSS / IMU"
+      ]
+    }
+  ],
+  "process_heading": "From first message to launch",
+  "steps": [
+    {
+      "title": "Free first look",
+      "text": "Send me the problem. I'll tell you honestly whether I'm the right fit and what it would take, at no cost."
+    },
+    {
+      "title": "Scope and quote",
+      "text": "A clear written scope: what gets built, what it costs, and when it lands. No moving targets."
+    },
+    {
+      "title": "Build in the open",
+      "text": "Regular working demos as it comes together, so you steer the build instead of waiting for a reveal."
+    },
+    {
+      "title": "Launch and support",
+      "text": "Deployment, a full handover walkthrough, and a window of free fixes after go-live."
+    }
+  ]
+}

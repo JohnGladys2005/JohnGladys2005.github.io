@@ -1,0 +1,8 @@
+<svg viewBox="0 0 480 360" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Abstract signal illustration">
+  <defs><pattern id="sgGrid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" class="s-rule" stroke-width=".6"/></pattern></defs>
+  <rect width="480" height="360" fill="url(#sgGrid)" opacity=".5"/>
+  <g transform="translate(0 150)"><path class="v-wave s-acc" fill="none" stroke-width="2" d="M0 0 Q30 -22 60 0 T120 0 T180 0 T240 0 T300 0 T360 0 T420 0 T480 0 T540 0 T600 0 T660 0 T720 0"/></g>
+  <g transform="translate(-40 190)"><path class="v-wave b s-trace" fill="none" stroke-width="1.6" d="M0 0 Q30 -14 60 0 T120 0 T180 0 T240 0 T300 0 T360 0 T420 0 T480 0 T540 0 T600 0 T660 0 T720 0"/></g>
+  <g transform="translate(-80 225)"><path class="v-wave c s-ink" opacity=".3" fill="none" d="M0 0 Q30 -9 60 0 T120 0 T180 0 T240 0 T300 0 T360 0 T420 0 T480 0 T540 0 T600 0 T660 0 T720 0"/></g>
+  <g transform="translate(400 90)"><circle class="v-ring s-acc" fill="none" r="26"/><circle class="v-ring r2 s-acc" fill="none" r="26"/><circle class="f-acc" r="5"/></g>
+</svg>

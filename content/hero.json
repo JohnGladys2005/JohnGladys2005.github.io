@@ -1,0 +1,22 @@
+{
+  "lead": "Full stack developer building",
+  "phrases": [
+    "web & app products",
+    "automation that saves hours",
+    "custom internal tools",
+    "APIs that connect systems",
+    "IoT hardware for the field"
+  ],
+  "button_primary": "Start a project",
+  "button_secondary": "See the work",
+  "based_in": "Chennai, India",
+  "ping_hint": "Click the water to send a ping",
+  "ticker": [
+    "Web & app development",
+    "Automation",
+    "APIs & integrations",
+    "IoT & embedded",
+    "Computer vision",
+    "Marine robotics"
+  ]
+}

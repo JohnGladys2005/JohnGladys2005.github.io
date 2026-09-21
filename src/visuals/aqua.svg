@@ -1,0 +1,15 @@
+<svg viewBox="0 0 480 360" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of a river level rising past an alert line">
+  <defs><clipPath id="v3chan"><path d="M96 40V120C132 120 140 300 200 304H280C340 300 348 120 384 120V40Z"/></clipPath></defs>
+  <text class="t" x="40" y="36">Live river water level</text>
+  <path class="f-ink" opacity=".07" d="M0 120H96C132 120 140 300 200 304H280C340 300 348 120 384 120H480V360H0Z"/>
+  <g clip-path="url(#v3chan)"><g class="v-level"><g transform="translate(0 254)"><path class="v-wave80 f-trace" opacity=".34" d="M0 0 Q20 -5 40 0 T80 0 T120 0 T160 0 T200 0 T240 0 T280 0 T320 0 T360 0 T400 0 T440 0 T480 0 T520 0 T560 0 T600 0 T640 0 V160 H0 Z"/></g></g></g>
+  <path class="s-ink" fill="none" stroke-width="1.5" d="M0 120H96C132 120 140 300 200 304H280C340 300 348 120 384 120H480"/>
+  <path class="s-acc" fill="none" stroke-width="1.3" stroke-dasharray="6 5" d="M100 184H380"/>
+  <text class="t t-acc" x="392" y="188">Alert level</text>
+  <g class="s-muted" stroke-width="1"><path d="M240 132V300"/><path d="M234 160H246M234 200H246M234 240H246M234 280H246"/></g>
+  <g transform="translate(52 118)"><g class="v-pin"><path class="f-acc" d="M0 0C-7-9-9-13-9-17A9 9 0 0 1 9-17C9-13 7-9 0 0Z"/><circle class="f-bg" cy="-17" r="3"/></g></g>
+  <g transform="translate(432 118)"><g class="v-pin p2"><path class="f-acc" d="M0 0C-7-9-9-13-9-17A9 9 0 0 1 9-17C9-13 7-9 0 0Z"/><circle class="f-bg" cy="-17" r="3"/></g></g>
+  <g transform="translate(78 118)"><g class="v-pin p3"><path class="f-acc" d="M0 0C-7-9-9-13-9-17A9 9 0 0 1 9-17C9-13 7-9 0 0Z"/><circle class="f-bg" cy="-17" r="3"/></g></g>
+  <text class="t" x="40" y="346">GPS-tagged field reports</text>
+  <g class="v-alert" transform="translate(290 22)"><rect class="f-acc" width="166" height="28" rx="14"/><circle class="f-on" cx="16" cy="14" r="4"/><text class="t-on" x="28" y="18" style="font-size:10.5px">Alert sent to authorities</text></g>
+  </svg>
